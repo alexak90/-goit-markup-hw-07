@@ -1,0 +1,50 @@
+:root {
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #2e2f42;
+  --third-backgrround-color: #f4f4fd;
+  --primary-text-color: #434455;
+  --second-text-color: #2e2f42;
+  --third-text-color: #f4f4fd;
+  --left-logo-color: #4d5ae5;
+  --third-backrgound-color:#404bbf;
+}
+
+p,h1,h2,h3,h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+link {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =================Только мобилка======================*/
+
+@media  and (max-width: 767px) {
+  .container {
+    max-width: ;
+  }
+}
+
+/* ================мобилка & планшет ==================*/
+
+@media screen and (max-width: 1157px){
+  .container {
+    padding-left: 16px;
+    padding-top: 16px;
+  }
+} 
+  
