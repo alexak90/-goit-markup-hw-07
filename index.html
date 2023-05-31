@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
@@ -42,6 +43,15 @@
             </li>
           </ul>
         </nav>
+        <button type="button"
+          class="mobil-open-menu" js-open-menu
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-icon-menu" width="32" height="22">
+            <use class="burger-icon-menu" href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <!-- Addres -->
         <address class="header-address">
           <ul class="header-address-list list">
@@ -58,19 +68,25 @@
           </ul>
         </address>
       </div>
+      <div class="mobil-menu">
+        <div class="mobil-menu-container" js-menu-container>
+          <button type="button" js-close-menu></button>
+        </div>
+
+      </div>
     </header>
     <main>
       <!-- Hero section -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
       <!--========================================= features section====================================== -->
-      <section class="features">
+      <!-- <section class="features">
         <div class="container">
           <h2 class="features" hidden>features</h2>
           <ul class="features-list list">
@@ -124,9 +140,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--========================================== Section About =======================================-->
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <h2 class="about-title title">What are we doing</h2>
           <ul class="about-list list">
@@ -159,9 +175,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--================================= Employees section ================================================-->
-      <section class="employee">
+      <!-- <section class="employee">
         <div class="container">
           <h2 class="employee-title-list title">Our Team</h2>
           <ul class="employee-list list">
@@ -339,9 +355,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- ==============================Company =======================================================-->
-      <section class="company-section">
+      <!-- <section class="company-section">
         <div class="container">
           <h2 class="title company-title">Customers</h2>
           <ul class="list company-item">
@@ -390,9 +406,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!-- ============================================Footer================================================== -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-items-container container">
         <div class="footer-container">
           <a class="foter-logoo link" href="./index.html"
@@ -456,17 +472,17 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- ==============Modal_Icon============================ -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </button>
+        </button> -->
         <!-- =======================FORM=============================== -->
-        <p class="form-title">Leave your contacts and we will call you back</p>
+        <!-- <p class="form-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="form-container">
             <label for="user-name" class="modal-form-field"
@@ -546,9 +562,7 @@
               type="checkbox"
               name="user-privacy"
               class="modal-form-check visually-hidden"
-              
               value="true"
-              
             />
             <label for="user-privacy" class="modal-form-check-desc">
               <span class="fake-check">
@@ -559,7 +573,7 @@
                   ></use>
                 </svg>
               </span>
-              
+
               I accept the terms and conditions of the
               <a href="#" class="link form-link">Privacy Policy</a>
             </label>
@@ -568,7 +582,9 @@
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
+  
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

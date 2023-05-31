@@ -26,16 +26,45 @@ img {
   list-style: none;
 }
 
-link {
+.text {
+  text-decoration: none;
+}
+
+.link {
   margin-left: auto;
   margin-right: auto;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+  }
+
+
 /* =================Только мобилка======================*/
 
-@media  and (max-width: 767px) {
+@media screen and (max-width: 767px){
+
+  
   .container {
-    max-width: ;
+    max-width: 428px;
+    padding: 16px 24px;
+  }
+
+  .header-address {
+    display: none;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .header-icon-menu {
+
+  }
+  .burger-icon-menu {
+    stroke: black;
   }
 }
 
@@ -48,3 +77,15 @@ link {
   }
 } 
   
+
+
+
+
+
+
+
+
+
+
+
+/* ================Только Планшет==================== */
