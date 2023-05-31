@@ -43,48 +43,46 @@
             </li>
           </ul>
         </nav>
-        <button type="button"
-          class="mobil-open-menu js-open-menu" 
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="header-icon-menu" width="32" height="22">
-            <use class="burger-icon-menu" href="./images/icons.svg#icon-burger"></use>
-          </svg>
-        </button>
         <!-- Addres -->
         <address class="header-address">
           <ul class="header-address-list list">
             <li>
               <a class="link-text link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              >info@devstudio.com</a
               >
             </li>
             <li>
               <a class="link-text link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
+              >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+          <button type="button"
+            class="mobile-open-menu js-open-menu" 
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="header-icon-menu" width="32" height="22">
+              <use class="burger-icon-menu" href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+          
+          
+          
       </div>
-      <div class="mobil-menu">
-        <div class="mobil-menu-container js-menu-container" >
-          <button type="button js-close-menu" ></button>
-        </div>
-
-      </div>
+        
     </header>
     <main>
       <!-- Hero section -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!--========================================= features section====================================== -->
       <!-- <section class="features">
         <div class="container">
@@ -583,6 +581,24 @@
         </form>
       </div>
     </div> -->
+    <div class="mobile-menu-container js-menu-container">
+      <button class="mobil-menu-close-btn js-close-menu" type="button">
+        <svg class="menu-icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-site-nav">
+        <li class="site-nav-mobil-link list">
+          <a class="mobile-menu-link link" href="./index.html">Studio</a>
+        </li>
+        <li class="site-nav-mobil-link list">
+          <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="site-nav-mobil-link list">
+          <a class="mobile-menu-link link" href="#">Contacts</a>
+        </li>
+      </ul>
+    </div>
   
     <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>

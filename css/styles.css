@@ -66,6 +66,10 @@ img {
   .burger-icon-menu {
     stroke: black;
   }
+
+  .mobile-open-menu.is-open {
+    transform: translateX(0);
+  }
 }
 
 /* ================мобилка & планшет ==================*/
