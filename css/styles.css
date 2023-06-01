@@ -6,10 +6,14 @@
   --second-text-color: #2e2f42;
   --third-text-color: #f4f4fd;
   --left-logo-color: #4d5ae5;
-  --third-backrgound-color:#404bbf;
+  --third-backrgound-color: #404bbf;
 }
 
-p,h1,h2,h3,h4 {
+p,
+h1,
+h2,
+h3,
+h4 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -33,23 +37,36 @@ img {
 .link {
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
 }
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-  }
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* =================Только мобилка======================*/
 
-@media screen and (max-width: 767px){
-
-  
+@media screen and (max-width: 767px) {
   .container {
     max-width: 428px;
     padding: 16px 24px;
+  }
+
+  .header-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--left-logo-color);
+  }
+
+  .logo-span {
+    color: var(--second-text-color);
+    text-transform: uppercase;
   }
 
   .header-address {
@@ -60,36 +77,121 @@ img {
     display: none;
   }
 
-  .header-icon-menu {
+  .mobile-open-menu {
+    border: none;
+    width: 32px;
+    height: 22px;
+    background-color: transparent;
+  }
 
+  .header-icon-menu {
   }
   .burger-icon-menu {
     stroke: black;
+    border: 3px solid #2e2f42;
   }
 
-  .mobile-open-menu.is-open {
+  .mobil-menu-close-btn {
+    position: absolute;
+    display: flex;
+    top: 16px;
+    right: 22px;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-menu-container.is-open {
     transform: translateX(0);
+  }
+
+  .mobile-menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 16px;
+    background-color: var(--primary-background-color);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .mobile-menu-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 151px;
+    height: 200px;
+    left: 40px;
+    top: 80px;
+  }
+
+  .site-nav-mobil-link {
+  }
+
+  .mobile-menu-link {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--second-text-color);
+  }
+
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    color: #404bbf;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-menu-adress {
+  }
+
+  .mobile-menu-contacts {
+  }
+  .mobile-menu-social-icon {
+    /* position: absolute; */
+    width: 328px;
+    height: 40px;
+    left: 40px;
+    top: 716px;
+    
+  }
+  .mobile-social {
+    
+  
+  }
+  .mobile-social-icons {
+  }
+  .mobile-social-link {
+  }
+  .link {
   }
 }
 
 /* ================мобилка & планшет ==================*/
 
-@media screen and (max-width: 1157px){
+@media screen and (max-width: 1157px) {
   .container {
     padding-left: 16px;
     padding-top: 16px;
   }
-} 
-  
-
-
-
-
-
-
-
-
-
-
+}
 
 /* ================Только Планшет==================== */
