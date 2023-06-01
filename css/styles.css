@@ -95,7 +95,7 @@ img {
     position: absolute;
     display: flex;
     top: 16px;
-    right: 22px;
+    right: 24px;
     align-items: center;
     justify-content: center;
     width: 24px;
@@ -119,11 +119,19 @@ img {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 16px;
+    
     background-color: var(--primary-background-color);
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+  }
+
+  .mobile-social-menu-container {
+    position: relative;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 35;
+    padding-bottom: 40;
   }
 
   .mobile-menu-link-container {
@@ -161,9 +169,21 @@ img {
   }
 
   .mobile-menu-adress {
+    width: 353px;
+height: 104px;
+left: 40px;
+top: 564px;
+
   }
 
   .mobile-menu-contacts {
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.11px;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: #4D5AE5;
+
   }
   .mobile-menu-social-icon {
     /* position: absolute; */
