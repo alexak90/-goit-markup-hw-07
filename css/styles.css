@@ -49,6 +49,11 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -123,7 +128,7 @@ img {
 
 .employee-list {
   display: flex;
-  gap: 24px;
+  
   padding-left: 0;
 }
 .employee-title {
@@ -171,6 +176,17 @@ img {
   fill: #f4f4fd;
 }
 
+/* ==========Company========= */
+
+.company-title {
+  text-align: center;
+  
+}
+
+.company-item {
+  display: flex;
+}
+
 /* =================Только мобилка======================*/
 
 @media screen and (max-width: 767px) {
@@ -179,8 +195,8 @@ img {
     max-width: 428px;
     padding-left: 16px;
     padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
 
   .nav-container {
@@ -300,7 +316,6 @@ img {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    display: block;
     color: var(--left-logo-color);
   }
 
@@ -317,6 +332,11 @@ img {
     justify-content: space-between;
     align-items: center;
   }
+
+  .employee-list {
+    row-gap: 72px;
+  }
+
   .mobile-social-icons {
     width: 40px;
     height: 40px;
@@ -379,10 +399,24 @@ img {
     background-color: var(--primary-background-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    flex-basis: calc((100% - 72px) / 4);
+    /* flex-basis: calc((100% - 72px) / 4); */
 
     border-radius: 0px 0px 4px 4px;
   }
+
+  .company-item {
+    
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
+  }
+
+  .company-logotype {
+    width: calc((100% - 16px) / 2);
+  }
+
+  
 
 }
 @media screen and (max-width: 420px) {
@@ -397,6 +431,8 @@ img {
   .container {
     padding-left: 16px;
     padding-right: 16px;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
   .icon {
     display: none;
