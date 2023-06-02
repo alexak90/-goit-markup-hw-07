@@ -162,6 +162,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background-color: #404bbf;
+}
+
 .social {
   fill: #f4f4fd;
 }
