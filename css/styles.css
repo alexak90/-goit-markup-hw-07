@@ -128,7 +128,7 @@ img {
 
 .employee-list {
   display: flex;
-  
+
   padding-left: 0;
 }
 .employee-title {
@@ -179,18 +179,55 @@ img {
 /* ==========Company========= */
 
 .company-title {
+  font-family: "Roboto";
+  font-style: normal;
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
   text-align: center;
-  
+  letter-spacing: 0.02em;
+}
+
+.company-title {
+  text-align: center;
 }
 
 .company-item {
   display: flex;
 }
 
+.company-link {
+  justify-content: center;
+  display: flex;
+  min-height: 88px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  color: #8e8f99;
+  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-icon {
+  fill: currentColor;
+}
+
+.company-link:hover,
+.company-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+
+  fill: #404bbf;
+}
+
 /* =================Только мобилка======================*/
 
 @media screen and (max-width: 767px) {
- 
   .container {
     max-width: 428px;
     padding-left: 16px;
@@ -405,7 +442,6 @@ img {
   }
 
   .company-item {
-    
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 16px;
@@ -415,9 +451,6 @@ img {
   .company-logotype {
     width: calc((100% - 16px) / 2);
   }
-
-  
-
 }
 @media screen and (max-width: 420px) {
   .mobile-menu-contacts {
@@ -467,6 +500,13 @@ img {
   }
   /*=============Employee=========  */
   .employee {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  /* ------Сompany---- */
+
+  .company-section {
     padding-top: 96px;
     padding-bottom: 96px;
   }
