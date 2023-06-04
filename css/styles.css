@@ -1002,12 +1002,14 @@ img {
   .footer {
     padding-left: 108px;
     padding-right: 108px;
-    
+    align-items: center;
   }
 
   .footer-items-container {
     display: flex;
     flex-wrap: wrap;
+    width: 552px;
+    padding-left: 0;
   }
 
   .footer-container {
