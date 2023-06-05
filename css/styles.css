@@ -120,6 +120,18 @@ img {
   background-color: var(--third-backrgound-color);
 }
 
+.hero {
+  background-color: var(--secondary-background-color);
+  
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  background-size: cover;
+
+}
+
+
 .features-list {
   display: flex;
 }
@@ -635,6 +647,33 @@ img {
 
 /* =================Только мобилка======================*/
 
+
+@media screen and (max-device-pixel-ratio: 1) and (max-width: 767px),
+screen and (max-resolution: 96dpi) and (max-width: 767px),
+screen and (max-resolution: 1dppx) and (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+            url('../images/mobile-hero/hero-mobile-428x432-1px_360.jpg');
+    }
+}
+/* Mobile contacts image 2px */
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+            url('../images/mobile-hero/hero-mobile-428x432-2px_720.jpg');
+    }
+}
+
+
+
 @media screen and (max-width: 767px) {
   .container {
     max-width: 428px;
@@ -761,6 +800,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .hero {
+    max-width: 428px;
   }
 
   .employee-list {
@@ -893,7 +936,7 @@ img {
   .hero-container {
     padding-top: 112px;
     padding-bottom: 112px;
-    background-color: black;
+    
   }
 
   .features {
@@ -960,6 +1003,32 @@ img {
 
 /* ================Только Планшет==================== */
 
+@media screen and (max-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1157px),
+screen and (max-resolution: 96dpi) and (min-width: 768px) and (max-width: 1157px),
+screen and (max-resolution: 1dppx) and (min-width: 768px) and (max-width: 1157px) {
+    .hero {
+        background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+            url('../images/tablet-hero/hero-tablet-768x436-1px_720.jpg');
+    }
+}
+/* Desktop contacts image 2px */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1157px),
+screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1157px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1157px) {
+    .hero {
+        background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+            url('../images/tablet-hero/hero-tablet-768x436-2px_720.jpg');
+    }
+}
+
+
+
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   /* features section */
   .container {
@@ -980,6 +1049,10 @@ img {
   .hero-title {
     max-width: 496px;
     margin-bottom: 36px;
+  }
+
+  .hero {
+    max-width: 768px;
   }
 
   .features-list {
@@ -1123,6 +1196,8 @@ img {
     color: #404bbf;
   }
 
+ 
+
   .hero-title {
     text-align: center;
     margin-left: auto;
@@ -1170,6 +1245,31 @@ img {
 
 /* ===================Тщлько десктоп=================== */
 
+@media screen and (max-device-pixel-ratio: 1) and (min-width: 1158px),
+screen and (max-resolution: 96dpi) and (min-width: 1158px),
+screen and (max-resolution: 1dppx) and (min-width: 1158px) {
+    .hero {
+        background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+            url('../images/descktop-hero/people-office.jpg');
+    }
+}
+/* Desktop contacts image 2px */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+    .hero {
+        background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+            url('../images/descktop-hero/hero-desktop-1440x600-2px_720.jpg');
+    }
+}
+
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -1205,7 +1305,14 @@ img {
   .hero-container {
     padding-top: 188px;
     padding-bottom: 188px;
-    background-color: black;
+    
+  }
+
+  .hero {
+   
+    max-width: 1440px;
+   
+
   }
 
   .hero-title {
