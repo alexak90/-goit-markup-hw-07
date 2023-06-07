@@ -988,7 +988,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     row-gap: 16px;
     padding-top: 48px;
     padding-bottom: 48px;
-    
+    max-width: 270px;
   }
 
   .portfolio-btn {
