@@ -31,9 +31,8 @@ ul {
 
 img {
   display: block;
-  
+
   width: 100%;
-  
 }
 
 .list {
@@ -178,8 +177,6 @@ img {
 
 .employee-list {
   display: flex;
-
-  
 }
 
 .employee-item {
@@ -187,7 +184,6 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
-  
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -264,14 +260,14 @@ img {
 .company-link {
   justify-content: center;
   display: flex;
-  
+
   height: 100%;
   width: 100%;
   align-items: center;
   border-radius: 4px;
   border: 1px solid #8e8f99;
   color: #8e8f99;
-  
+
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -710,6 +706,10 @@ img {
 
 .portfolio-title {
   margin-bottom: 8px;
+  color: var(--second-text-color);
+  /* font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2; */
 }
 
 /* =================Только мобилка======================*/
@@ -923,12 +923,9 @@ img {
   }
 
   .employee-list {
-   
     flex-direction: column;
     align-items: center;
   }
-
-  
 
   .company-item {
     justify-content: center;
@@ -994,14 +991,11 @@ img {
     flex-direction: column;
     align-items: center;
     row-gap: 48px;
-
   }
 
   .card-item {
     width: 100%;
   }
-
-  
 }
 
 @media screen and (min-width: 428px) {
@@ -1169,7 +1163,7 @@ img {
   /*=============Employee=========  */
   .employee-list {
     flex-wrap: wrap;
-    
+
     row-gap: 64px;
     justify-content: center;
   }
@@ -1183,7 +1177,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     width: 584px;
-    
   }
 
   .footer-container {
@@ -1204,8 +1197,8 @@ img {
   }
 
   .portfolio-filters {
-    padding-top: 64px;
-    padding-bottom: 129px;
+    margin-bottom: 64px;
+    
   }
 
   .card-content {
@@ -1217,7 +1210,8 @@ img {
   }
 
   .portfolio-section {
-    padding-bottom: 31px;
+    padding-top: 64px;
+    padding-bottom: 96px;
   }
 
   .company-logotype {
@@ -1349,16 +1343,12 @@ img {
     column-gap: 24px;
   }
 
-  
   .company-item {
-   
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 24px;
   }
 
-  
-  
   /* ==================Portfolio=============== */
 
   .portfolio-btn {
@@ -1537,7 +1527,7 @@ img {
     text-transform: capitalize;
     color: var(--second-text-color);
   }
- 
+
   .employee-container {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -1645,7 +1635,7 @@ img {
   }
 
   .portfolio-filters {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
   }
 
   .card-item {
