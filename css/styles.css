@@ -970,14 +970,15 @@ img {
   /* ------PORTFOLIO----- */
 
   .portfolio-section {
+    padding-top: 48px;
     padding-bottom: 48px;
   }
 
   .portfolio-filters {
     flex-wrap: wrap;
     row-gap: 16px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    
+   margin-bottom: 48px;
     max-width: 270px;
   }
 
